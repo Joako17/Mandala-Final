@@ -1,0 +1,446 @@
+:root {
+  --primary: #006ea1;
+  --secundary: #2e4469;
+  --background: #35495e;
+  --black-text: rgb(61, 61, 61);
+  --white-text: #ffffff;
+  --button-hover: #754938;
+  --dolar: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* INDEX-------------------- */
+nav {
+  background-color: var(--primary);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav #ckbox {
+  display: none;
+}
+nav .drawer {
+  color: var(--white-text);
+  float: left;
+  cursor: pointer;
+  display: none;
+  margin-left: 1rem;
+  border: solid 0.1rem var(--white-text);
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+nav h1 {
+  color: var(--white-text);
+  font-size: 2rem;
+  letter-spacing: 0.7rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  border-right: solid 0.1rem rgba(61, 61, 61, 0.41);
+}
+nav ul li a {
+  color: var(--white-text);
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  background-color: var(--button-hover);
+  transition: all 0.3s;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+
+/* FIN-------------------- */
+/* HEADER-------------------- */
+main {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+main h1 {
+  font-size: 1.7rem;
+  color: var(--black-text);
+  text-align: center;
+  margin: 1rem;
+}
+main p {
+  color: var(--black-text);
+  text-align: center;
+  margin: 1rem 0;
+}
+main form {
+  display: flex;
+  justify-content: center;
+}
+main form button {
+  margin: 0 0.5rem;
+  width: 8rem;
+  height: 2.6rem;
+  font-size: 1rem;
+}
+main form button a {
+  color: var(--primary);
+  font-weight: 600;
+}
+main img {
+  height: 70vh;
+}
+
+/*---------- */
+.staff {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.staff h1 {
+  text-align: center;
+}
+.staff .seccion2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.staff .seccion2 .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 15px 20px;
+}
+.staff .seccion2 .card .head {
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+.staff .seccion2 .card .head .circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #0b6f72;
+  bottom: 0;
+}
+.staff .seccion2 .card .head .img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: var(--white-text);
+  padding: 5px;
+  border-radius: 50%;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.staff .seccion2 .card .head .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.staff .seccion2 .card .description {
+  height: 200px;
+  padding: 40px 20px 20px 20px;
+  border-bottom: solid 1px rgba(6, 74, 76, 0.18);
+  text-align: center;
+}
+.staff .seccion2 .card .description h3 {
+  color: var(--background);
+}
+.staff .seccion2 .card .description h4 {
+  color: var(--secundary);
+}
+.staff .seccion2 .card .description p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.staff .seccion2 .card .description .pedagogia {
+  color: green;
+}
+.staff .seccion2 .card .contact {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.staff .seccion2 .card .contact a {
+  text-decoration: none;
+  color: #fff;
+  background: #157579;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.staff .seccion2 .card .contact a:hover {
+  background: var(--dolar);
+}
+.staff .seccion2 .card:hover {
+  box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5019607843);
+  transform: translateY(-15px);
+}
+
+/* pag servicios */
+.service {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 1rem;
+}
+.service h1 {
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+.service h5 {
+  font-weight: 10;
+  font-family: "IBM Plex Serif";
+}
+.service p {
+  font-family: "Heebo";
+}
+.service .service2 {
+  margin-top: 1rem;
+  padding: 2em;
+}
+
+/* --------------------------------- */
+/* pagina contacto */
+.contacto {
+  padding: 1em;
+}
+
+/* ---------------- */
+/* pag ubicacion */
+.ubicacion {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.ubicacion h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* ---------------- */
+/* footer */
+footer .footer {
+  width: 100%;
+  margin-top: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to top, #1a052e, transparent);
+  padding: 1rem 0;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+footer .footer .content {
+  overflow: hidden;
+}
+footer .footer .content h4 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+footer .footer .content .circle {
+  margin: 2.4rem 0;
+  color: green;
+}
+footer .footer .content .about {
+  margin-bottom: 3rem;
+}
+footer .footer .content .about p {
+  line-height: 2;
+}
+footer .footer .social-icons {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+footer .footer .social-icons i {
+  font-size: 2rem;
+  color: #3bcc75;
+  padding: 0.8rem 2rem;
+}
+footer .footer .news-form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+footer .footer .news-form input {
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+footer .footer .news-form .btn {
+  background: transparent;
+  border: none;
+  color: #252525;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1px 0.6rem;
+  position: absolute;
+  top: 30%;
+  margin-left: 20.5rem;
+}
+footer .jat {
+  background-color: var(--primary);
+  color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+/* FOOTER--------------------*/
+footer .footer {
+  width: 100%;
+  margin-top: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to top, #1a052e, transparent);
+  padding: 1rem 0;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+footer .footer .content {
+  overflow: hidden;
+}
+footer .footer .content h4 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+footer .footer .content .circle {
+  margin: 2.4rem 0;
+  color: green;
+}
+footer .footer .content .about {
+  margin-bottom: 3rem;
+}
+footer .footer .content .about p {
+  line-height: 2;
+}
+footer .footer .social-icons {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+footer .footer .social-icons i {
+  font-size: 2rem;
+  color: #3bcc75;
+  padding: 0.8rem 2rem;
+}
+footer .footer .news-form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+footer .footer .news-form input {
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+footer .footer .news-form .btn {
+  background: transparent;
+  border: none;
+  color: #252525;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1px 0.6rem;
+  position: absolute;
+  top: 30%;
+  margin-left: 20.5rem;
+}
+footer .jat {
+  background-color: var(--primary);
+  color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+@media (max-width: 700px) {
+  nav {
+    justify-content: flex-start;
+  }
+  nav .drawer {
+    display: block;
+  }
+  nav h1 {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  nav ul {
+    position: fixed;
+    width: 50%;
+    height: 70vh;
+    background-color: var(--background);
+    top: 10vh;
+    left: -100%;
+    text-align: left;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+  }
+  nav ul li {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
+  }
+  nav #ckbox:checked ~ .menu-box {
+    left: 0;
+  }
+  main {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: contents;
+  }
+  main .logovec {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
